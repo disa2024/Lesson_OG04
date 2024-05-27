@@ -1,6 +1,6 @@
 import random
 
-print("Камень, ножницы, бумага")
+list = ["камень", "ножницы", "бумага"]
 
 user_win = 0
 pc_win = 0
@@ -14,12 +14,4 @@ while user_win < 3 and pc_win < 3:
     elif (choise_user == "камень" and choise_pc == "ножницы") or (choise_user == "ножницы" and choise_pc == "бумага") or (choise_user == "бумага" and choise_pc == "камень"):
         print("Человек выиграл")
         user_win += 1
-    else:
-        print("Компьютер выиграл")
-        pc_win += 1
-
-if user_win == 3:
-    print("Человек выиграл игру")
-else:
-    print("Компьютер выиграл игру")
 
